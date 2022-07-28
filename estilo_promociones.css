@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+header{
+    background-color: #baddc5;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    color: #000000;
+    font-family: 'Style Script', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.logo .foto{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.menu-home{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+}
+
+.menu-home li{
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.menu-home li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-family:'Style Script', cursive;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.menu-home li a:hover{
+    background-color: #95b09e;
+    border-radius: 5%;    
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 20px;
+    border: solid black;
+    border-radius: 5px;
+    background-color: #baddc5;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.promos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.paquetesClasicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.zonas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.tittle{
+    margin-top: 0;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #baddc5;
+    height: 16vh;
+    margin: 0;
+}
+
+.contact{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.contact li{
+    display: flex;
+    text-align:left;
+    padding: 5px;
+    background-color: #baddc5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;  
+}
+
+.copy{
+    display: flex;
+    text-align: center;
+    justify-content: baseline;
+    font-family: 'Style Script', cursive;
+    font-size: large;
+}
+
+.links{
+    list-style-type: none;
+    margin: 0;
+}
+
+.links li{
+    display: inline-block;
+    text-align:right;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.links li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links li a:hover{
+    background-color: #6464649a;
+    border-radius: 10%;
+}
