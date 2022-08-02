@@ -5,16 +5,58 @@
  }
 
 body{
-    background-color: rgb(245, 245, 245);
+    background-color: #F1FFF2;
+    height: 100%;
+}
+
+.body1{
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "hero" 
+    "main" 
+    "footer" ;
+}
+
+.body2{
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer" ;
+}
+
+.body3{
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer" ;
+}
+
+.body4{
+    background-image: url(./media/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer" ;
 }
 
 header{
-    background-color: #baddc5;
+    grid-area: header;
+    background-color: #d6ffe5;
     display: flex;
-    height: 70px;
-    justify-content: space-between;
+    min-height: 70px;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+}
+
+main{
+    grid-area: main;
 }
 
 .logo{
@@ -25,21 +67,20 @@ header{
 }
 
 .logo .foto{
-    width: 70px;
-    height: 70px;
-    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    margin-right: 2px;
 }
 
 .menu-home{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin-right: 70px;
+    margin-left: 10px;
 }
 
 .menu-home li{
     padding: 5px;
-    margin-right: 20px;
 }
 
 .menu-home li a{
@@ -48,7 +89,6 @@ header{
     color: #000000;
     font-family:'Style Script', cursive;
     font-weight: 600;
-    font-size: x-large;
 }
 
 .menu-home li a:hover{
@@ -56,21 +96,321 @@ header{
     border-radius: 5%;    
 }
 
+h2{
+    margin-top: 3rem;
+    border: solid 0.5px black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #424242;
+    background-color: #d6ffe5;
+    text-align: center;
+}
+
+h3{
+    color: #424242;
+}
+
+p{
+    color: #424242;
+}
+
+/*Página Inicio*/
 .hero{
+    grid-area: hero;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-    0deg,
-    rgb(0,0,0,0.1),
-    rgb(0,0,0,0.1)
-    )
-    ,url(./media/1.png);
+    background-image:  linear-gradient(
+        0deg,
+        rgb(0,0,0,0.1),
+        rgb(0,0,0,0.1)
+        )
+        ,url(./media/fondo6.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Style Script', cursive;
     font-size:xx-large
+}
+
+.turnos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Roboto Slab', serif;
+    height: 98vh;
+}
+
+.contenido h3{
+    margin: 3rem
+}
+
+.contenido button{
+    padding: 5px 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: smaller;
+    background-color: #d6ffe5;
+    border-radius: 5px;
+    border: solid 0.5px black
+}
+
+.contenido .button :hover{
+    background-color: #8aaa95;
+}
+
+.pfc{
+    border-top: rgb(82, 82, 82) solid 1px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Roboto Slab', serif;
+    height: 98vh;
+}
+
+.pg{
+    color: #424242;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    color: #424242;
+    text-align: center;
+    padding:20px;
+    width: 800px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+/*Página Inicio*/
+
+/*Página Promos*/
+
+.seccion{
+    border-bottom: #424242 0.5px solid;
+    margin-bottom: 2rem;
+}
+
+.promos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+.paquetesClasicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+.zonas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+.tittle{
+    margin-top: 0;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+/*Página Promos*/
+
+/*Página Quienes Somos*/
+.qs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Roboto Slab', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.sec{
+    border-bottom: #424242 0.5px solid;
+    margin-bottom: 2rem;
+}
+
+p{  
+    color: #424242;
+    margin-top: 0,5rem;
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+    padding:20px;
+    width: 700px;
+}
+
+/*Página Quienes Somos*/
+
+/*Página Contacto*/
+.principal{
+    font-family:'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.principal .cts{
+    margin: 1rem;
+}
+
+.principal h3{
+    font-size: medium;
+}
+
+a{
+    text-decoration: none;
+}
+/*Página Contacto*/
+
+/*Página Ingresar y Registrarse*/
+
+fieldset{
+    width: 400px;
+    height: 220px;
+    margin: auto;
+    margin-bottom: 0,5rem;
+    font-family: 'Roboto Slab', serif;
+    border-style: double;
+    background-color: #baddc5;
+    border-width: 10px;
+    border-color: #000000;
+    padding: 10px;
+}
+
+.enviar{
+    padding: 5px;
+}
+
+.linkIngresar{
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+ }
+
+ .registro h2{
+    margin-bottom: 2rem;
+ }
+ 
+ fieldset{
+    width: 400px;
+    height: 220px;
+    margin: auto;
+    margin-bottom: 0,5rem;
+    font-family: 'Roboto Slab', serif;
+    border-style: double;
+    background-color: #baddc5;
+    border-width: 10px;
+    border-color: #000000;
+    padding: 10px;
+ }
+ 
+ .enviar{
+    padding: 5px;
+ }
+ 
+ .linkRegistrarse{
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+ }
+/*Página Ingresar y Registrarse*/
+
+
+footer{
+    grid-area: footer;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d6ffe5;
+    min-height: 60px;
+    margin-top: 1rem;
+    border-top: black solid 1px;
+}
+
+.copy{
+    font-family: 'Style Script', cursive;
+    font-size: small;
+}
+
+.links{
+    list-style-type: none;
+    margin: 0;
+}
+
+.links li{
+    display: inline-block;
+    text-align:right;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.links li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links li a:hover{
+    background-color: #6464649a;
+    border-radius: 10%;
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    body{
+        font-size: medium;
+    }
+    
+    footer{
+        flex-direction: column-reverse;
+        
+    }
 }
