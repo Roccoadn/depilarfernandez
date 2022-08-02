@@ -7,6 +7,7 @@
 body{
     background-color: #F1FFF2;
     height: 100%;
+    width: 100%;
 }
 
 .body1{
@@ -124,6 +125,7 @@ p{
     text-align: center;
     flex-direction: column;
     height: 90vh;
+    max-width: 100%;
     background-image:  linear-gradient(
         0deg,
         rgb(0,0,0,0.1),
@@ -396,7 +398,7 @@ footer{
     border-radius: 10%;
 }
 
-@media (max-width:768px){
+@media (max-width:400px){
     header{
         flex-direction: column;
         font-size: small;
