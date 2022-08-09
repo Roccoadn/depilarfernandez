@@ -116,10 +116,12 @@ main{
 }
 
 h2{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 5px 10px;
     border: solid 0.5px black;
     border-radius: 5px;
-    padding: 5px 20px;
     font-family: 'Roboto', sans-serif;
     color: #424242;
     background-color: #d6ffe5;
@@ -157,19 +159,29 @@ p{
     font-size:xx-large
 }
 
+.turnos-contenedor{
+    height: 98vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .turnos{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
+    padding: 1px;
     font-family: 'Roboto Slab', serif;
-    height: 98vh;
+    border: #333 solid 0.5px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
 }
 
 .contenido h3{
-    margin: 3rem
+    margin: 2.5rem
 }
 
 .contenido button{
@@ -189,9 +201,17 @@ p{
 	color: #ffffff;
 }
 
+.pfc-contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+    margin-bottom: 1.5rem;
+}
 
 .pfc{
-    border-top: rgb(82, 82, 82) solid 1px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -199,22 +219,44 @@ p{
     flex-direction: column;
     padding: 50px;
     font-family: 'Roboto Slab', serif;
-    height: 98vh;
+    border: #333 solid 0.5px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+    margin-bottom: 6rem;
+
 }
 
-.pg{
+.pg-1{
     color: #424242;
     padding: 5px;
     font-family: 'Roboto Slab', serif;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
+    border-bottom: #333 solid 0.5px;
+}
+
+.pg-2{
+    color: #424242;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: #333 solid 0.5px;
+}
+
+.pg-3{
+    color: #424242;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: #333 solid 0.5px;
 }
 
 .text{
     color: #424242;
     text-align: center;
     padding:20px;
-    width: 800px;
+    width: 500px;
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
 }
