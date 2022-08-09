@@ -5,7 +5,7 @@
  }
 
 body{
-    background-color: #F1FFF2;
+    background-color: #fdfdfd;
     height: 100%;
     width: 100%;
 }
@@ -56,12 +56,13 @@ body{
 
 header{
     grid-area: header;
-    background-color: #b8e0c7;
+    background-color: #fcfcfc;
     display: flex;
-    min-height: 70px;
+    min-height: 50px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    border-bottom: #333 solid 0.5px;
 }
 
 main{
@@ -97,14 +98,13 @@ main{
     text-decoration: none;
     color: #000000;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }
 
 .menu-home li::before{
     content: "";
     height: 5px;
     width: 0%;
-    background: #8db49c;;
+    background: #8db49c;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -262,6 +262,8 @@ p{
 
 
 img{
+    border: solid #333 0,5px;
+    box-shadow: #424242;
     width: 200px;
     height: 200px;
 }
@@ -340,7 +342,16 @@ fieldset{
 }
 
 .enviar{
-    padding: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+.enviar input:hover{
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+    background-color: #222924;
+	color: #ffffff;
+    transition: 2s;
 }
 
 .linkIngresar{
@@ -416,10 +427,10 @@ footer{
 .redes-container li a{
     text-decoration: none;
     padding: 10px;
-    font-size: medium;
-    background-color: #333;
-    border-radius: 20px;
-    color: #ffffff;
+    font-size: 1em;
+    background-color: #baddc5;
+    border-radius: 50%;
+    color: #000000;
     transition: 1s;
 }
 
