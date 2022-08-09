@@ -12,6 +12,8 @@ body{
 
 .body1{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-areas: 
     "header" 
     "hero" 
@@ -21,6 +23,8 @@ body{
 
 .body2{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-areas: 
     "header" 
     "main" 
@@ -29,6 +33,8 @@ body{
 
 .body3{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-areas: 
     "header" 
     "main" 
@@ -36,6 +42,8 @@ body{
 }
 
 .body4{
+    height: 100%;
+    width: 100%;
     background-image: url(./media/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +56,7 @@ body{
 
 header{
     grid-area: header;
-    background-color: #d6ffe5;
+    background-color: #b8e0c7;
     display: flex;
     min-height: 70px;
     width: 100%;
@@ -81,20 +89,30 @@ main{
 }
 
 .menu-home li{
-    padding: 5px;
+    position: relative;
+    margin: 0 20px;
 }
 
 .menu-home li a{
-    padding: 5px;
     text-decoration: none;
     color: #000000;
-    font-family:'Style Script', cursive;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-.menu-home li a:hover{
-    background-color: #95b09e;
-    border-radius: 5%;    
+.menu-home li::before{
+    content: "";
+    height: 5px;
+    width: 0%;
+    background: #8db49c;;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-out;
+}
+
+.menu-home li:hover::before{
+    width: 100%;
 }
 
 h2{
@@ -102,7 +120,7 @@ h2{
     border: solid 0.5px black;
     border-radius: 5px;
     padding: 5px 20px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     color: #424242;
     background-color: #d6ffe5;
     text-align: center;
@@ -121,6 +139,7 @@ p{
     grid-area: hero;
     display: flex;
     align-items: center;
+    color: white;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -128,10 +147,10 @@ p{
     max-width: 100%;
     background-image:  linear-gradient(
         0deg,
-        rgb(0,0,0,0.1),
-        rgb(0,0,0,0.1)
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
         )
-        ,url(./media/fondo6.png);
+        ,url(./media/fondo9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Style Script', cursive;
@@ -154,17 +173,22 @@ p{
 }
 
 .contenido button{
-    padding: 5px 10px;
-    font-family: 'Roboto Slab', serif;
-    font-size: smaller;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     background-color: #d6ffe5;
-    border-radius: 5px;
-    border: solid 0.5px black
+    cursor:pointer;
+	padding:5px 10px;
+	border-radius:5px;
+    transition:all 1s;
 }
 
-.contenido .button :hover{
-    background-color: #8aaa95;
+.contenido button:hover{
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+    background-color: #222924;
+	color: #ffffff;
 }
+
 
 .pfc{
     border-top: rgb(82, 82, 82) solid 1px;
@@ -241,6 +265,11 @@ img{
     width: 200px;
     height: 200px;
 }
+
+img:hover{
+    transition: 2s;
+    transform: scale(1.2);
+}
 /*Página Promos*/
 
 /*Página Quienes Somos*/
@@ -307,6 +336,7 @@ fieldset{
     border-width: 10px;
     border-color: #000000;
     padding: 10px;
+    text-align: left;
 }
 
 .enviar{
@@ -373,32 +403,42 @@ footer{
     font-size: small;
 }
 
-.links{
+.redes-container{
     list-style-type: none;
     margin: 0;
 }
 
-.links li{
+.redes-container li{
     display: inline-block;
-    text-align:right;
     margin: 10px;
-    padding: 10px;
-    border-radius: 15%;
 }
 
-.links li a{
+.redes-container li a{
     text-decoration: none;
     padding: 10px;
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    background-color: #333;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: 1s;
 }
 
-.links li a:hover{
-    background-color: #6464649a;
-    border-radius: 10%;
+.redes-container .whatsapp:hover{
+    background: #25D366;
+    text-decoration: none;
 }
 
-@media (max-width:400px){
+.redes-container .instagram:hover{
+    background: #C13584;
+    text-decoration: none;
+}
+
+.redes-container .facebook:hover{
+    background: #3b5998;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
     header{
         flex-direction: column;
         font-size: small;
