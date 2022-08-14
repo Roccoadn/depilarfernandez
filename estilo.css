@@ -6,6 +6,7 @@
 
 body{
     background-color: #fdfdfd;
+    
     height: 100%;
     width: 100%;
 }
@@ -54,12 +55,12 @@ body{
     "footer" ;
 }
 
-header{
+nav{
     grid-area: header;
     background-color: #fcfcfc;
     display: flex;
-    min-height: 50px;
     width: 100%;
+    height: 80px;
     justify-content: space-around;
     align-items: center;
     border-bottom: #333 solid 0.5px;
@@ -77,8 +78,8 @@ main{
 }
 
 .logo .foto{
-    width: 90px;
-    height: 90px;
+    max-width: 80px;
+    max-height: 80px;
     margin-right: 2px;
 }
 
@@ -104,7 +105,7 @@ main{
     content: "";
     height: 5px;
     width: 0%;
-    background: #8db49c;
+    background: gray;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -146,7 +147,7 @@ p{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    max-width: 100%;
+    width: 100%;
     background-image:  linear-gradient(
         0deg,
         rgb(0,0,0,0.5),
@@ -160,7 +161,7 @@ p{
 }
 
 .turnos-contenedor{
-    height: 98vh;
+    height: 600px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -207,7 +208,9 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 98vh;
+    height: 700px;
+    width: 200px;
+    margin: auto;
     margin-bottom: 1.5rem;
 }
 
@@ -318,18 +321,71 @@ img:hover{
 
 /*Página Quienes Somos*/
 .qs{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item2"
+    "item3 item3";
+
+    justify-content: center;
     font-family:'Roboto Slab', serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.item1{
+    grid-area: item1;
+    border: #333 solid 0.5px;
+    border-radius: 5px;
+    width: 700px;
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+}
+
+.item2{
+    grid-area: item2;
+    border: #333 solid 0.5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+    width: 700px;
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.item3{
+    grid-area: item3;
+    justify-content: center;
+    flex-direction: column;
+    border: #333 solid 0.5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 0px;
 }
 
 .sec{
-    border-bottom: #424242 0.5px solid;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapa{
+    margin: auto;
+    border: #333 solid 0.5px;
+    box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+}
+
+.mapa_foto{
+    width: 500px;
+    height: 200px;
+    margin: 0px;
 }
 
 p{  
@@ -492,20 +548,68 @@ footer{
 }
 
 @media (max-width:768px){
-    header{
-        flex-direction: column;
-        font-size: small;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
+    
+    nav{
+        justify-content: space-between;
     }
+    
+    .logo{
+        font-size: smaller;
+    }
+
+    .menu-home{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+    .menu-home li{
+        font-size: smaller;
+    }
+
+    .turnos-contenedor{
+        font-size: smaller;
+        margin-top: 50px;
+    }
+
+    .pfc-contenedor{
+        font-size: smaller;
+    }
+
+    .pfc{
+    padding: 0px;
+    }
+
+    .pg-3{
+        border-bottom: 0px;
+    }
+
+
 
     body{
         font-size: medium;
     }
     
     footer{
-        flex-direction: column-reverse;
-        
+        flex-direction: column-reverse; 
     }
+
+    .redes-container{
+        margin-top: 10px;
+    }
+
+    .copy{
+        font-size: x-small;
+    }
+
+    .principal{
+        font-size: smaller;
+    }
+
+    .principal h3{
+        font-size: smaller;
+    }
+}
+
+
+@media (max-width:576px){
+    
 }
