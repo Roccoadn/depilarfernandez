@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./fav icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fav icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +20,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e9d07a5c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>DePilarFernández</title>
@@ -27,84 +36,188 @@
 
     <header>
 
-        <nav>
-            <div>
-                <a href="./index.html" class="logo">
-                    <img src="./media/logo.png" alt="" class="foto">
-                    <h1 class="letras">
-                            DePilarFernández
-                    </h1>
-                </a>
-            </div>
-
-            <ul class="menu-home">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="promociones.html">Promociones</a> 
-                </li>
-                <li>
-                    <a href="quienessomos.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./media/logo.png" alt="" width="100" height="90" class="d-inline-block align-text-center">
+                    <span class="logo">DePilarFernández</span> 
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
                     </a>
-                </li>
-            </ul>
-
-        </nav>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./quienessomos.html">Sobre nosotros</a></li>
+                      <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                      <li><a class="dropdown-item" href="./registrarse.html">Registrarse</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
         
 
     <main>
-        <section class="seccion 1">
-            <div class="tittle">
-                <h2>
-                    Promos
-                </h2>
-            </div>
+        <section class="promo">
+            <div class="container">
+                <div class="row">
+                    <h2 class="subtitulo-promos col-12 align-text-center">
+                        Promociones
+                    </h2>
+                    <div class="col-12 p-4 w-75 ms-auto mb-4">
+                        <h3 class="acordion_title">
+                            Zonas Femeninas
+                        </h3>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ¡Combos de zonas por 6 sesiones!
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="vstack">
+                                    <div>
+                                        Cavado + Tira de cola + Axilas x6
+                                    </div>
+                                    <div>
+                                        <span class="text-success">$16.000</span>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  ¡Zonas por 6 sesiones!
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="accordion-body">
+                                        <div class="vstack">
+                                        <div>
+                                            Cavado x6
+                                        </div>
+                                        <div>
+                                            <span class="text-success">$9.000</span>
+                                        </div>
+                                        <div class="vstack">
+                                        
+                                        <div>
+                                            Tira de cola x6
+                                        </div>
+                                        <div>
+                                            <span class="text-success">$6.000</span>
+                                        </div>
 
-            <div class="promos"> 
-                <img src="./media/axilass.jpg" alt="promo1">
-                <img src="./media/axilass.jpg" alt="promo2">
-                <img src="./media/axilass.jpg" alt="promo3">
-                <img src="./media/axilass.jpg" alt="promo4">
-            </div>
+                                        <div class="vstack">
+                                            <div>
+                                                Axilas x6
+                                            </div>
+                                            <div>
+                                                <span class="text-success">$5.000</span>
+                                        </div>
+
+                                        <div class="vstack">
+                                            <div>
+                                                Bozo x6
+                                            </div>
+                                            <div>
+                                                <span class="text-success">$3.000</span>
+                                        </div>
+
+                                        <div class="vstack">
+                                            <div>
+                                                Piernas completas x6
+                                            </div>
+                                            <div>
+                                                <span class="text-success">$15.000</span>
+                                        </div>
+
+                                        <div class="vstack">
+                                            <div>
+                                                Media pierna x6
+                                            </div>
+                                            <div>
+                                                <span class="text-success">$15.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
         </section>
 
-
-        <section class="seccion 2">
-            <div class="tittle">
-                <h2>
-                    Paquetes Clasicos
-                </h2>
-            </div>
-
-            <div class="paquetesClasicos">
-                <img src="./media/axilass.jpg" alt="paquete1">
-                <img src="./media/axilass.jpg" alt="paquete2">
-                <img src="./media/axilass.jpg" alt="paquete3">
-                <img src="./media/axilass.jpg" alt="paquete4">
-            </div>
+        <section class="zonas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-3 w-75 ms-auto">
+                        <h3 class="acordion_title">
+                            Zonas masculinas
+                        </h3>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Accordion Item #1
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>  
         </section>
-
-
-        <section class="seccion 3">
-            <div class="tittle">
-                <h2>
-                    Zonas
-                </h2>
-            </div>
-
-            <div  class="zonas">
-                <img src="./media/axilass.jpg" alt="zona1">
-                <img src="./media/axilass.jpg" alt="zona2">
-                <img src="./media/axilass.jpg" alt="zona3">
-                <img src="./media/axilass.jpg" alt="zona4">
-            </div>
-        </secion>
 
     </main>
 
@@ -130,6 +243,13 @@
             </div>
     </footer>
 
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 
 </html>
