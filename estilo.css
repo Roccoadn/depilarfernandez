@@ -8,7 +8,7 @@ body{
     margin-top: 70px;
     background-color: #fdfdfd;
     height: 100%;
-    min-width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
@@ -23,7 +23,7 @@ body{
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header" 
@@ -141,6 +141,10 @@ main{
 
 }
 
+h2{
+    font-weight: bold;
+}
+
 h3{
     color: #424242;
 }
@@ -172,6 +176,57 @@ p{
     font-size:xx-large
 }
 
+.container-medio{
+    margin-top: 3rem;
+}
+
+.contenido-medio{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.foto-medica img{
+    width: 330px;
+    height: 300px;
+    margin-right: 30px;
+    
+}
+
+.asside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 300px;
+}
+
+.asside h3{
+    color: #333;
+    font-weight: bold;
+    font-family:'Nunito', sans-serif;
+    text-align: center;
+}
+
+.asside p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: larger;
+    color: #424242e3;
+}
+
+.ul-asside ul li{
+    font-family: 'Nunito', sans-serif;
+    color: #424242cb;
+    font-weight: bold;
+    list-style: none;
+    border-top: rgba(121, 121, 121, 0.699) solid 0.5px;
+    padding: 10px;
+}
 
 .turnos{
     margin: 1.5rem;
@@ -249,8 +304,9 @@ p{
 /*Página Inicio*/
 
 /*Página Promos*/
-
-
+.promo{
+    margin-bottom: 5rem;
+}
 /*Página Promos*/
 
 /*Página Quienes Somos*/
@@ -445,6 +501,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     background-color: #d6ffe5;
+    width: 100%;
     max-height: 80px;
     margin-top: 1rem;
     margin-bottom: 0px;
@@ -490,29 +547,7 @@ footer{
     text-decoration: none;
 }
 
-/* Menu hamburguesa */
-
-.nav__label{
-    line-height: 80px;
-    font-size: 30px;
-    float: right;
-    color: #000000;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-.nav__input{
-    display: none;
-}
-
-/* Menu hamburguesa */
-
 @media (max-width:768px){
-      
-    .logo{
-        font-size: smaller;
-    }
 
     .turnos-contenedor{
         font-size: smaller;
@@ -555,4 +590,35 @@ footer{
         max-width: 578px;
     }
 
+    .turnos-contenedor{
+    font-size: small;
+    }
+
+    .pfc-contenedor{
+    font-size: small;
+    }
+
+    body{
+    font-size: medium;
+    }
+
+    footer{
+    flex-direction: column-reverse; 
+    }
+
+    .redes-container{
+    margin-top: 10px;
+    }
+
+    .copy{
+    font-size: x-small;
+    }
+
+    .principal{
+    font-size: small;
+    }
+
+    .principal h3{
+    font-size: small;
+    }
 }
