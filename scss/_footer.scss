@@ -1,0 +1,46 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $color-footer;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    border-top: $color-border solid 1px;
+    .copy{
+        font-family: $logoLetra;
+        color: $color-letra;
+        font-size: small;
+    }
+    .redes-container{
+        list-style-type: none;
+        margin: auto;
+        li{
+            display: inline-block;
+            margin: 10px;
+            a{
+                text-decoration: none;
+                padding: 2px;
+                font-size: 2em;
+                border-radius: 5px;
+                color: #333;
+                transition: 1s;
+            }
+            .whatsapp:hover{
+                background: #25D366;
+                text-decoration: none;
+            }
+            .instagram:hover{
+                background: #C13584;
+                text-decoration: none;
+            }
+            .facebook:hover{
+                background: #3b5998;
+                text-decoration: none;
+            }
+        }
+    }
+}
