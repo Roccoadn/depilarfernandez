@@ -79,7 +79,8 @@ header .navbar {
     flex-direction: column;
     height: 90vh;
     width: 100%;
-    background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url(/assets/media/fondo9.jpg));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url("https://via.placeholder.com/2500");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Style Script", cursive;
