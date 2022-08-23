@@ -16,7 +16,7 @@
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    width: 100%;
+    max-width: 100%;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5),
@@ -28,16 +28,15 @@
     font-size:xx-large;
 
     @include media-down(lg){
-        width: auto;
+        width: 100%;
     }
 
     @include media-down(md){
-        width: auto;
+        width: 100%;
     }
-    
 
     @include media-down(sm){
-        width: auto;
+        width: 100%;
     }
     }
 
@@ -121,7 +120,7 @@
         }
 
         .descripcion{
-            width: 700px;
+            width: 500px;
             margin-top: 6rem;
             @include media-down(md){
                     margin-left: auto;

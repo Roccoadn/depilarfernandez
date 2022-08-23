@@ -77,7 +77,7 @@ header .navbar {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    width: 100%;
+    max-width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-image: url("../assets/media/fondoVerde.jpg");
     background-repeat: no-repeat;
@@ -86,13 +86,13 @@ header .navbar {
     font-size: xx-large; }
     @media screen and (max-width: 1200px) {
       .main1 .hero {
-        width: auto; } }
+        width: 100%; } }
     @media screen and (max-width: 992px) {
       .main1 .hero {
-        width: auto; } }
+        width: 100%; } }
     @media screen and (max-width: 768px) {
       .main1 .hero {
-        width: auto; } }
+        width: 100%; } }
   .main1 .container-medio {
     margin-top: 3rem; }
     .main1 .container-medio .contenido-medio {
@@ -152,7 +152,7 @@ header .navbar {
         height: 600px;
         font-size: smaller; } }
     .main1 .medio-index .descripcion {
-      width: 700px;
+      width: 500px;
       margin-top: 6rem; }
       @media screen and (max-width: 992px) {
         .main1 .medio-index .descripcion {
