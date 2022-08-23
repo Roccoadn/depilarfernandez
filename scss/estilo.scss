@@ -1,3 +1,5 @@
+@import "maps.scss";
+@import "mixins.scss";
 @import "colors.scss";
 @import "typography.scss";
 @import "body.scss";
@@ -24,7 +26,21 @@
     background-size: cover;
     font-family: $logoLetra;
     font-size:xx-large;
+
+    @include media-down(lg){
+        width: auto;
     }
+
+    @include media-down(md){
+        width: auto;
+    }
+    
+
+    @include media-down(sm){
+        width: auto;
+    }
+    }
+
     .container-medio{
         margin-top: 3rem;
         .contenido-medio{
@@ -32,11 +48,24 @@
             align-items: center;
             justify-items: center;
             justify-content: space-evenly;
+            
+            @include media-down(md){
+                flex-direction: column;
+            }
             .foto-medica img{
                 width: 330px;
                 height: 300px;
                 margin-right: 30px;
-                
+            
+                @include media-down(md){
+                    margin-top: 3rem;
+                    margin: auto;
+                }
+
+                @include media-down(sm){
+                        
+                }
+                   
             }
             .asside{
                 display: flex;
@@ -45,6 +74,11 @@
                 justify-content: center;
                 width: 420px;
                 height: 300px;
+                @include media-down(md){
+                    margin-top: 3rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 h3{
                     color: $color-letra;
                     font-weight: bold;
@@ -80,9 +114,19 @@
         margin-top: 3rem;
         height: 350px;
         background-color: #ddd;
+        
+        @include media-down(md){
+            height: 600px;
+            font-size: smaller;
+        }
+
         .descripcion{
             width: 700px;
             margin-top: 6rem;
+            @include media-down(md){
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             h3{
                 margin-top: 20px;
                 font-size: large;
@@ -155,6 +199,9 @@
         font-family: $letra;
         border: $color-border solid 0.5px;
         box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+        @include media-down(md){
+            font-size: smaller;
+        }
         .tittle-pg{
             text-align: left;   
             i{
@@ -198,7 +245,8 @@
     grid-area: main;
     .sb{
         margin-top: 3rem;
-        width: 500px;
+        margin-left:auto;
+        width: 350px;
         padding: 10px;
         background-color: #B7E4C7;
         border-radius: 5px;
@@ -223,13 +271,22 @@
                 color: $color-letra;
             }
         }
+        h3{
+            margin-top: 1.5rem;
+        }
         p{  
             color: $color-letra;
             margin-top: 0,5rem;
-            text-align: center;
+            text-align: left;
             font-family: $letra2;
             padding:20px;
             width: 700px;
+            @include media-down(md){
+                width: 690px;
+            }
+            @include media-down(sm){
+                width: 500px;
+            }
         }
         .item1{
             display: flex;
@@ -240,41 +297,43 @@
             background-color: white;
             width: 700px;
             margin-left: auto;
+            margin-right: auto;
             margin-bottom: 3rem;
             height: 200px;
             box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+            @include media-down(xs){
+                width: 500px;
+            }
         }
         .item2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: $color-border solid 0.5px;                
-            border-radius: 5px;
-            background-color: white;
-            box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
-            width: 700px;
-            margin-bottom: 3rem;      
-            margin-left: auto;
-            height: 200px;
+            @extend .item1;
+            @include media-down(xs){
+                width: 500px;
+            }
             }
         .item3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-direction: column;
-            background-color: white;
-            border: $color-border solid 0.5px;
-            border-radius: 5px;
-            box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
-            width: 700px;
+            @extend .item1;
             height: 600px;
-            margin-left: auto;
             margin-bottom: 0px;
+            @include media-down(xs){
+                width: 500px;
+                height: 450;
+            }
             .mapa{
                 padding: 30px;
-                width: 650px;
+                width: 670px;
                 background-color: #333;
+                border-radius: 5px;
                 box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+                @include media-down(md){
+                    width: 670px;
+                }
+                @include media-down(sm){
+                    width: 510px;
+                }
+                @include media-down(xs){
+                    width: 470px;
+                }
                 .mapa_foto{
                     width: 500px;
                     height: 200px;
@@ -303,6 +362,7 @@
             font-size: medium;
         }
         .cts-container{
+            font-family: $letra;
             margin-top: 5rem;
             margin-right: auto;
             margin-left: auto;
@@ -311,22 +371,31 @@
             border: $color-border solid 0.5px;
             box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
             border-radius: 5px;
+            @include media-down(xs){
+                width: 390px;
+            }
             .cts{
                 margin: 1rem;
                 padding: 5px 10px;
                 width: 220px;
-                margin-left: 9rem;
+                margin-left: auto;
+                margin-right: auto; 
                 h2{
                     padding: 5px 10px;
                     background-color: #baddc5;
                     border-radius: 5px;
-                
+                    border: $color-border solid 0.5px; 
                 }
+                p{
+                    width: 360px;
+                    text-align: left;
+                }    
             }
             .redes-container-contacto{
                 list-style-type: none;
                 margin-bottom: 1rem;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
                 li{
                     display: inline-block;
                     margin: 10px;
@@ -397,192 +466,3 @@
 
 
 @import "footer.scss";
-@media (min-width:768px) and (max-width:992px){
-    header{
-        nav{
-            height: auto;
-        }
-    }
-    .medio-index{
-        .descripcion{
-            width: 500px;
-        }
-        
-        .turnos{
-            margin-left: 50px;
-        }
-    }
-}
-@media (max-width:768px){
-    header{
-        nav{
-            height: auto;
-        }
-    }
-    /*index*/
-    .contenido-medio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        justify-content: space-evenly;
-        .foto-medica{
-            margin-top: 3rem;
-            margin: auto;
-        }
-        .asside{
-            margin-top: 3rem;
-            margin-left: auto;
-        }
-    }
-    .medio-index{
-        height: 600px;
-        font-size: smaller;
-    }
-    .pfc{
-        font-size: smaller;
-    }
-    /*index*/ 
-    /*¿Quiénes somos?*/
-    .sb{
-        width: 200px;
-        margin: auto;
-        margin-top: 3rem;
-        h2{
-            text-align: center;
-            font-size: medium;
-        }
-    }
-    .qs{
-        .sec{
-            width: 500px;
-            height: 250px;
-            h3{
-                font-size: medium;
-                font-weight: bold;
-                text-align: center;
-            }
-            p{
-                font-size: small;
-                text-align: center;
-                width: fit-content;
-            }
-            .item3{
-                height: fit-content;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                .mapa{
-                    width: fit-content;
-                    padding: 5px;
-                    border-radius: 5px;
-                    .mapa-foto{
-                        width: fit-content;
-                        height: fit-content;
-                    }
-                }
-            }
-        }    
-    }
-    /*¿Quiénes somos?*/
-}
-@media (max-width:576px){
-    header{
-        nav{
-            height: auto;
-        }
-    }
-    /*index*/
-    .hero{
-        height: 50vh;
-        max-width: 578px;
-    }
-    .container-medio{
-        .contenido-medio{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            justify-content: space-evenly;
-            foto-medica{
-                margin-top: 3rem;
-                margin: auto;
-            }
-            .asside{
-                margin-top: 3rem;
-                margin-left: auto;
-            }
-        }
-    }
-
-    .medio-index{
-        font-size: small;
-        height: 600px;
-    }
-    .pfc{
-        font-size: small;
-    }
-    /*index*/
-    /*¿Quiénes somos?*/
-    .sb{
-        width: 200px;
-        margin: auto;
-        margin-top: 3rem;
-        h2{
-            text-align: center;
-            font-size: medium;
-        }
-    }
-    .qs{
-        .sec{
-            width: 500px;
-            height: 250px;
-            h3{
-                font-size: medium;
-                font-weight: bold;
-                text-align: center;
-            }
-            p{
-                font-size: small;
-                text-align: center;
-                width: fit-content;
-            }
-            .item3{
-                height: fit-content;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                .mapa{
-                    width: fit-content;
-                    padding: 5px;
-                    border-radius: 5px;
-                    .mapa-foto{
-                        width: fit-content;
-                        height: fit-content;
-                    }
-                }
-            }
-        }
-    }
-    /*¿Quiénes somos?*/
-    footer{
-        flex-direction: column-reverse;
-        .copy{ 
-            p{
-            font-family: $logoLetra;
-            font-size: medium;
-            text-align: center;
-            }
-        }
-        .redes-container{
-            li{
-                a{
-                    text-align: center;
-                    font-size: 2em;
-                    color: black;
-                }
-            }
-        }
-    }
-}
-
-
-

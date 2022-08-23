@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin-top: 70px;
   background-color: #fdfdfd;
@@ -85,6 +84,15 @@ header .navbar {
     background-size: cover;
     font-family: "Style Script", cursive;
     font-size: xx-large; }
+    @media screen and (max-width: 1200px) {
+      .main1 .hero {
+        width: auto; } }
+    @media screen and (max-width: 992px) {
+      .main1 .hero {
+        width: auto; } }
+    @media screen and (max-width: 768px) {
+      .main1 .hero {
+        width: auto; } }
   .main1 .container-medio {
     margin-top: 3rem; }
     .main1 .container-medio .contenido-medio {
@@ -92,10 +100,17 @@ header .navbar {
       align-items: center;
       justify-items: center;
       justify-content: space-evenly; }
+      @media screen and (max-width: 992px) {
+        .main1 .container-medio .contenido-medio {
+          flex-direction: column; } }
       .main1 .container-medio .contenido-medio .foto-medica img {
         width: 330px;
         height: 300px;
         margin-right: 30px; }
+        @media screen and (max-width: 992px) {
+          .main1 .container-medio .contenido-medio .foto-medica img {
+            margin-top: 3rem;
+            margin: auto; } }
       .main1 .container-medio .contenido-medio .asside {
         display: flex;
         flex-direction: column;
@@ -103,6 +118,11 @@ header .navbar {
         justify-content: center;
         width: 420px;
         height: 300px; }
+        @media screen and (max-width: 992px) {
+          .main1 .container-medio .contenido-medio .asside {
+            margin-top: 3rem;
+            margin-left: auto;
+            margin-right: auto; } }
         .main1 .container-medio .contenido-medio .asside h3 {
           color: #333;
           font-weight: bold;
@@ -127,9 +147,17 @@ header .navbar {
     margin-top: 3rem;
     height: 350px;
     background-color: #ddd; }
+    @media screen and (max-width: 992px) {
+      .main1 .medio-index {
+        height: 600px;
+        font-size: smaller; } }
     .main1 .medio-index .descripcion {
       width: 700px;
       margin-top: 6rem; }
+      @media screen and (max-width: 992px) {
+        .main1 .medio-index .descripcion {
+          margin-left: auto;
+          margin-right: auto; } }
       .main1 .medio-index .descripcion h3 {
         margin-top: 20px;
         font-size: large;
@@ -193,6 +221,9 @@ header .navbar {
     font-family: "nunito", sans-serif;
     border: #808080 solid 0.5px;
     box-shadow: 10px 10px 5px 0px #e3e3e3; }
+    @media screen and (max-width: 992px) {
+      .main1 .pfc {
+        font-size: smaller; } }
     .main1 .pfc .tittle-pg {
       text-align: left; }
       .main1 .pfc .tittle-pg i {
@@ -227,7 +258,8 @@ header .navbar {
   grid-area: main; }
   .main3 .sb {
     margin-top: 3rem;
-    width: 500px;
+    margin-left: auto;
+    width: 350px;
     padding: 10px;
     background-color: #B7E4C7;
     border-radius: 5px;
@@ -247,14 +279,22 @@ header .navbar {
       font-family: "Roboto Slab", serif;
       font-weight: bold;
       color: #333; }
+    .main3 .qs h3 {
+      margin-top: 1.5rem; }
     .main3 .qs p {
       color: #333;
       margin-top: 0,5rem;
-      text-align: center;
+      text-align: left;
       font-family: "Roboto Slab", serif;
       padding: 20px;
       width: 700px; }
-    .main3 .qs .item1 {
+      @media screen and (max-width: 992px) {
+        .main3 .qs p {
+          width: 690px; } }
+      @media screen and (max-width: 768px) {
+        .main3 .qs p {
+          width: 500px; } }
+    .main3 .qs .item1, .main3 .qs .item2, .main3 .qs .item3 {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -263,39 +303,38 @@ header .navbar {
       background-color: white;
       width: 700px;
       margin-left: auto;
+      margin-right: auto;
       margin-bottom: 3rem;
       height: 200px;
       box-shadow: 10px 10px 5px 0px #e3e3e3; }
-    .main3 .qs .item2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border: #808080 solid 0.5px;
-      border-radius: 5px;
-      background-color: white;
-      box-shadow: 10px 10px 5px 0px #e3e3e3;
-      width: 700px;
-      margin-bottom: 3rem;
-      margin-left: auto;
-      height: 200px; }
+      @media screen and (max-width: 576px) {
+        .main3 .qs .item1, .main3 .qs .item2, .main3 .qs .item3 {
+          width: 500px; } }
+    @media screen and (max-width: 576px) {
+      .main3 .qs .item2 {
+        width: 500px; } }
     .main3 .qs .item3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-direction: column;
-      background-color: white;
-      border: #808080 solid 0.5px;
-      border-radius: 5px;
-      box-shadow: 10px 10px 5px 0px #e3e3e3;
-      width: 700px;
       height: 600px;
-      margin-left: auto;
       margin-bottom: 0px; }
+      @media screen and (max-width: 576px) {
+        .main3 .qs .item3 {
+          width: 500px;
+          height: 450; } }
       .main3 .qs .item3 .mapa {
         padding: 30px;
-        width: 650px;
+        width: 670px;
         background-color: #333;
+        border-radius: 5px;
         box-shadow: 10px 10px 5px 0px #e3e3e3; }
+        @media screen and (max-width: 992px) {
+          .main3 .qs .item3 .mapa {
+            width: 670px; } }
+        @media screen and (max-width: 768px) {
+          .main3 .qs .item3 .mapa {
+            width: 510px; } }
+        @media screen and (max-width: 576px) {
+          .main3 .qs .item3 .mapa {
+            width: 470px; } }
         .main3 .qs .item3 .mapa .mapa_foto {
           width: 500px;
           height: 200px;
@@ -317,6 +356,7 @@ header .navbar {
       color: #333;
       font-size: medium; }
     .main4 .principal .cts-container {
+      font-family: "nunito", sans-serif;
       margin-top: 5rem;
       margin-right: auto;
       margin-left: auto;
@@ -325,19 +365,28 @@ header .navbar {
       border: #808080 solid 0.5px;
       box-shadow: 10px 10px 5px 0px #e3e3e3;
       border-radius: 5px; }
+      @media screen and (max-width: 576px) {
+        .main4 .principal .cts-container {
+          width: 390px; } }
       .main4 .principal .cts-container .cts {
         margin: 1rem;
         padding: 5px 10px;
         width: 220px;
-        margin-left: 9rem; }
+        margin-left: auto;
+        margin-right: auto; }
         .main4 .principal .cts-container .cts h2 {
           padding: 5px 10px;
           background-color: #baddc5;
-          border-radius: 5px; }
+          border-radius: 5px;
+          border: #808080 solid 0.5px; }
+        .main4 .principal .cts-container .cts p {
+          width: 360px;
+          text-align: left; }
       .main4 .principal .cts-container .redes-container-contacto {
         list-style-type: none;
         margin-bottom: 1rem;
-        margin: auto; }
+        margin-left: auto;
+        margin-right: auto; }
         .main4 .principal .cts-container .redes-container-contacto li {
           display: inline-block;
           margin: 10px; }
@@ -426,132 +475,3 @@ footer {
       footer .redes-container li .facebook:hover {
         background: #3b5998;
         text-decoration: none; }
-
-@media (min-width: 768px) and (max-width: 992px) {
-  header nav {
-    height: auto; }
-  .medio-index .descripcion {
-    width: 500px; }
-  .medio-index .turnos {
-    margin-left: 50px; } }
-
-@media (max-width: 768px) {
-  header nav {
-    height: auto; }
-  /*index*/
-  .contenido-medio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-evenly; }
-    .contenido-medio .foto-medica {
-      margin-top: 3rem;
-      margin: auto; }
-    .contenido-medio .asside {
-      margin-top: 3rem;
-      margin-left: auto; }
-  .medio-index {
-    height: 600px;
-    font-size: smaller; }
-  .pfc {
-    font-size: smaller; }
-  /*index*/
-  /*¿Quiénes somos?*/
-  .sb {
-    width: 200px;
-    margin: auto;
-    margin-top: 3rem; }
-    .sb h2 {
-      text-align: center;
-      font-size: medium; }
-  .qs .sec {
-    width: 500px;
-    height: 250px; }
-    .qs .sec h3 {
-      font-size: medium;
-      font-weight: bold;
-      text-align: center; }
-    .qs .sec p {
-      font-size: small;
-      text-align: center;
-      width: fit-content; }
-    .qs .sec .item3 {
-      height: fit-content;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .qs .sec .item3 .mapa {
-        width: fit-content;
-        padding: 5px;
-        border-radius: 5px; }
-        .qs .sec .item3 .mapa .mapa-foto {
-          width: fit-content;
-          height: fit-content; }
-  /*¿Quiénes somos?*/ }
-
-@media (max-width: 576px) {
-  header nav {
-    height: auto; }
-  /*index*/
-  .hero {
-    height: 50vh;
-    max-width: 578px; }
-  .container-medio .contenido-medio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-evenly; }
-    .container-medio .contenido-medio foto-medica {
-      margin-top: 3rem;
-      margin: auto; }
-    .container-medio .contenido-medio .asside {
-      margin-top: 3rem;
-      margin-left: auto; }
-  .medio-index {
-    font-size: small;
-    height: 600px; }
-  .pfc {
-    font-size: small; }
-  /*index*/
-  /*¿Quiénes somos?*/
-  .sb {
-    width: 200px;
-    margin: auto;
-    margin-top: 3rem; }
-    .sb h2 {
-      text-align: center;
-      font-size: medium; }
-  .qs .sec {
-    width: 500px;
-    height: 250px; }
-    .qs .sec h3 {
-      font-size: medium;
-      font-weight: bold;
-      text-align: center; }
-    .qs .sec p {
-      font-size: small;
-      text-align: center;
-      width: fit-content; }
-    .qs .sec .item3 {
-      height: fit-content;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .qs .sec .item3 .mapa {
-        width: fit-content;
-        padding: 5px;
-        border-radius: 5px; }
-        .qs .sec .item3 .mapa .mapa-foto {
-          width: fit-content;
-          height: fit-content; }
-  /*¿Quiénes somos?*/
-  footer {
-    flex-direction: column-reverse; }
-    footer .copy p {
-      font-family: "Style Script", cursive;
-      font-size: medium;
-      text-align: center; }
-    footer .redes-container li a {
-      text-align: center;
-      font-size: 2em;
-      color: black; } }
