@@ -14,7 +14,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-  background-image: url(/assets/media/fondo.png);
+  background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -23,7 +23,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-  background-image: url(/assets/media/fondo.png);
+  background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -32,7 +32,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-  background-image: url(/assets/media/fondo.png);
+  background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -41,7 +41,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-  background-image: url(/assets/media/fondo.png);
+  background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
