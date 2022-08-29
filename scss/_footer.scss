@@ -1,46 +1,126 @@
 footer{
     grid-area: footer;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: $color-footer;
+    flex-direction: column;
+    background-color: black;
     width: 100%;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 0rem;
     border-top: $color-border solid 1px;
-    .copy{
-        font-family: $logoLetra;
-        color: $color-letra;
-        font-size: small;
-    }
-    .redes-container{
-        list-style-type: none;
-        margin: auto;
-        li{
-            display: inline-block;
-            margin: 10px;
+
+    .footer-container{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        h5{
+            color: white;
+            font-family: $letra;
+        }
+        .logo-container{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
             a{
                 text-decoration: none;
-                padding: 2px;
-                font-size: 2em;
-                border-radius: 5px;
-                color: #333;
-                transition: 1s;
             }
-            .whatsapp:hover{
-                background: #25D366;
-                text-decoration: none;
+            h1{
+                margin-left: 5px;
+                font-size: large;
+                color: white;
+                font-family: $logoLetra;
             }
-            .instagram:hover{
-                background: #C13584;
-                text-decoration: none;
-            }
-            .facebook:hover{
-                background: #3b5998;
-                text-decoration: none;
+            .logo-footer{
+                background-color: white;
+                border-radius: 50%;
             }
         }
+        .contacto-container{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            h5{
+                font-family: $letra;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .boton-container{
+                button{
+                background-color: whitesmoke;
+                border-radius: 5px;
+                border: solid $color-border 0.5px;
+                }
+            }
+            .boton-container:hover{
+                background-color: rgb(199, 199, 199);
+            } 
+            a{
+                text-decoration: none;
+                color: $color-letra;
+                font-family: $letra;
+            }
+        }
+        .menu-container{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: $color-letra-links;
+                        font-family: $letra;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        color: #d3d0d0;
+                    }
+                }
+            }
+        
+            
+        }
+        .redes-container{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    margin: 10px;
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        padding: 2px;
+                        font-size: 1em;
+                        border-radius: 5px;
+                        color: $color-letra-links;
+                        transition: 1s;
+                    }
+                    .whatsapp:hover{
+                        background: #a1a1a1;
+                        color: #333;
+                        text-decoration: none;
+                    }
+                    .instagram:hover{
+                        background: #a1a1a1;
+                        color: #333;
+                        text-decoration: none;
+                    }
+                    .facebook:hover{
+                        background: #a1a1a1;
+                        color: #333;
+                        text-decoration: none;
+                    }
+                }    
+            } 
+        }
+    }
+    .copy{
+        text-align: center;
+        font-family: $logoLetra;
+        color: $color-letra-links;
+        font-size: medium;
     }
 }

@@ -440,38 +440,94 @@ header .navbar {
 footer {
   grid-area: footer;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #d6ffe5;
+  flex-direction: column;
+  background-color: black;
   width: 100%;
   height: auto;
   margin-top: 1rem;
   margin-bottom: 0rem;
   border-top: #808080 solid 1px; }
-  footer .copy {
-    font-family: "Style Script", cursive;
-    color: #333;
-    font-size: small; }
-  footer .redes-container {
-    list-style-type: none;
-    margin: auto; }
-    footer .redes-container li {
-      display: inline-block;
-      margin: 10px; }
-      footer .redes-container li a {
-        text-decoration: none;
-        padding: 2px;
-        font-size: 2em;
+  footer .footer-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 50px; }
+    footer .footer-container h5 {
+      color: white;
+      font-family: "nunito", sans-serif; }
+    footer .footer-container .logo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end; }
+      footer .footer-container .logo-container a {
+        text-decoration: none; }
+      footer .footer-container .logo-container h1 {
+        margin-left: 5px;
+        font-size: large;
+        color: white;
+        font-family: "Style Script", cursive; }
+      footer .footer-container .logo-container .logo-footer {
+        background-color: white;
+        border-radius: 50%; }
+    footer .footer-container .contacto-container {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column; }
+      footer .footer-container .contacto-container h5 {
+        font-family: "nunito", sans-serif;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      footer .footer-container .contacto-container .boton-container button {
+        background-color: whitesmoke;
         border-radius: 5px;
+        border: solid #808080 0.5px; }
+      footer .footer-container .contacto-container .boton-container:hover {
+        background-color: #c7c7c7; }
+      footer .footer-container .contacto-container a {
+        text-decoration: none;
         color: #333;
-        transition: 1s; }
-      footer .redes-container li .whatsapp:hover {
-        background: #25D366;
-        text-decoration: none; }
-      footer .redes-container li .instagram:hover {
-        background: #C13584;
-        text-decoration: none; }
-      footer .redes-container li .facebook:hover {
-        background: #3b5998;
-        text-decoration: none; }
+        font-family: "nunito", sans-serif; }
+    footer .footer-container .menu-container ul {
+      margin: 0;
+      padding: 0; }
+      footer .footer-container .menu-container ul li {
+        list-style-type: none; }
+        footer .footer-container .menu-container ul li a {
+          text-decoration: none;
+          color: #808080;
+          font-family: "nunito", sans-serif; }
+        footer .footer-container .menu-container ul li a:hover {
+          text-decoration: underline;
+          color: #d3d0d0; }
+    footer .footer-container .redes-container ul {
+      margin: 0;
+      padding: 0; }
+      footer .footer-container .redes-container ul li {
+        margin: 10px;
+        list-style-type: none; }
+        footer .footer-container .redes-container ul li a {
+          text-decoration: none;
+          padding: 2px;
+          font-size: 1em;
+          border-radius: 5px;
+          color: #808080;
+          transition: 1s; }
+        footer .footer-container .redes-container ul li .whatsapp:hover {
+          background: #a1a1a1;
+          color: #333;
+          text-decoration: none; }
+        footer .footer-container .redes-container ul li .instagram:hover {
+          background: #a1a1a1;
+          color: #333;
+          text-decoration: none; }
+        footer .footer-container .redes-container ul li .facebook:hover {
+          background: #a1a1a1;
+          color: #333;
+          text-decoration: none; }
+  footer .copy {
+    text-align: center;
+    font-family: "Style Script", cursive;
+    color: #808080;
+    font-size: medium; }
