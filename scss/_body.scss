@@ -11,18 +11,7 @@ body{
     "header"
     "main"
     "footer";
-    @include media-down(lg){
-        width: 100%;
-    }
-    @include media-down(md){
-        width: 100%;
-    }
-    @include media-down(sm){
-        width: 100%;
-    }
-    @include media-down(xs){
-        width: 100%;
-    }
+
 }
 .body2{
     display: grid;
@@ -35,18 +24,7 @@ body{
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    @include media-down(lg){
-        width: 100%;
-    }
-    @include media-down(md){
-        width: 100%;
-    }
-    @include media-down(sm){
-        width: 100%;
-    }
-    @include media-down(xs){
-        width: 100%;
-    }
+
     }
 .body3{
     display: grid;
@@ -59,18 +37,7 @@ body{
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    @include media-down(lg){
-        width: 100%;
-    }
-    @include media-down(md){
-        width: 100%;
-    }
-    @include media-down(sm){
-        width: 100%;
-    }
-    @include media-down(xs){
-        width: 100%;
-    } 
+
 }
 .body4{
     display: grid;
@@ -83,18 +50,6 @@ body{
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    @include media-down(lg){
-        width: 100%;
-    }
-    @include media-down(md){
-        width: 100%;
-    }
-    @include media-down(sm){
-        width: 100%;
-    }
-    @include media-down(xs){
-        width: 100%;
-    }
 }
 .body5{
     display: grid;
@@ -107,16 +62,4 @@ body{
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    @include media-down(lg){
-        width: 100%;
-    }
-    @include media-down(md){
-        width: 100%;
-    }
-    @include media-down(sm){
-        width: 100%;
-    }
-    @include media-down(xs){
-        width: 100%;
-    }
 }
