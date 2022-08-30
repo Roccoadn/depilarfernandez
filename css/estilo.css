@@ -7,6 +7,18 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer"; }
+  @media screen and (max-width: 1200px) {
+    body {
+      width: 100%; } }
+  @media screen and (max-width: 992px) {
+    body {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    body {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    body {
+      width: 100%; } }
 
 .body2 {
   display: grid;
@@ -16,6 +28,18 @@ body {
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1200px) {
+    .body2 {
+      width: 100%; } }
+  @media screen and (max-width: 992px) {
+    .body2 {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .body2 {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .body2 {
+      width: 100%; } }
 
 .body3 {
   display: grid;
@@ -25,6 +49,18 @@ body {
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1200px) {
+    .body3 {
+      width: 100%; } }
+  @media screen and (max-width: 992px) {
+    .body3 {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .body3 {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .body3 {
+      width: 100%; } }
 
 .body4 {
   display: grid;
@@ -34,6 +70,18 @@ body {
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1200px) {
+    .body4 {
+      width: 100%; } }
+  @media screen and (max-width: 992px) {
+    .body4 {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .body4 {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .body4 {
+      width: 100%; } }
 
 .body5 {
   display: grid;
@@ -43,6 +91,18 @@ body {
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1200px) {
+    .body5 {
+      width: 100%; } }
+  @media screen and (max-width: 992px) {
+    .body5 {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .body5 {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .body5 {
+      width: 100%; } }
 
 header .navbar {
   transition: all 1s;
