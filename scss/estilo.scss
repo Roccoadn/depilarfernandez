@@ -16,7 +16,7 @@
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    max-width: 100%;
+    width: 100%;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5),
@@ -233,12 +233,11 @@
             margin-bottom: 3rem;
             padding: 5px
         }
-    }
-    .zonas{
-        font-family: $letra;
-        margin-bottom: 5rem;
+        @import "zonaFem.scss";
+        @import "zonaMas.scss";
     }
 }
+
 
 .main3{
     grid-area: main;
@@ -316,7 +315,7 @@
             margin-bottom: 0px;
             @include media-down(xs){
                 width: 500px;
-                height: 450;
+                height: 750;
             }
             .mapa{
                 padding: 30px;
@@ -333,6 +332,19 @@
                 @include media-down(xs){
                     width: 470px;
                 }
+                iframe{
+                    @include media-down(md){
+                        width: 670px;
+                    }
+                    @include media-down(sm){
+                        width: 510px;
+                    }
+                    @include media-down(xs){
+                        width: 470px;
+                    }
+                }
+
+                
                 .mapa_foto{
                     width: 500px;
                     height: 200px;

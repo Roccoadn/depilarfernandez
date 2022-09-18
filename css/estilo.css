@@ -137,7 +137,7 @@ header .navbar {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    max-width: 100%;
+    width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-image: url("../assets/media/fondoVerde.jpg");
     background-repeat: no-repeat;
@@ -310,9 +310,456 @@ header .navbar {
       margin-right: auto;
       margin-bottom: 3rem;
       padding: 5px; }
-  .main2 .zonas {
-    font-family: "nunito", sans-serif;
-    margin-bottom: 5rem; }
+    .main2 .promo .zonaFem-1-x6-a {
+      display: flex; }
+      .main2 .promo .zonaFem-1-x6-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-1-x6-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-1-x6-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-1-x6-b {
+      display: flex; }
+      .main2 .promo .zonaFem-1-x6-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-1-x6-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-1-x6-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-1-x6-c {
+      display: flex; }
+      .main2 .promo .zonaFem-1-x6-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-1-x6-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-1-x6-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-1-x6-d {
+      display: flex; }
+      .main2 .promo .zonaFem-1-x6-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-1-x6-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-1-x6-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-a {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-b {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-c {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-d {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-e {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-e img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-e ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-e ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-2-x6-f {
+      display: flex; }
+      .main2 .promo .zonaFem-2-x6-f img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-2-x6-f ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-2-x6-f ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-a {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-b {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-c {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-d {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-e {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-e img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-e ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-e ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-f {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-f img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-f ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-f ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-g {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-g img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-g ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-g ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-h {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-h img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-h ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-h ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-i {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-i img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-i ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-i ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-j {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-j img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-j ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-j ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-k {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-k img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-k ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-k ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-l {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-l img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-l ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-l ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaFem-3-x1-m {
+      display: flex; }
+      .main2 .promo .zonaFem-3-x1-m img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaFem-3-x1-m ul li {
+        list-style: none; }
+        .main2 .promo .zonaFem-3-x1-m ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-1-x6-a {
+      display: flex; }
+      .main2 .promo .zonaMas-1-x6-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-1-x6-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-1-x6-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-1-x6-b {
+      display: flex; }
+      .main2 .promo .zonaMas-1-x6-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-1-x6-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-1-x6-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-1-x6-c {
+      display: flex; }
+      .main2 .promo .zonaMas-1-x6-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-1-x6-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-1-x6-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-1-x6-d {
+      display: flex; }
+      .main2 .promo .zonaMas-1-x6-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-1-x6-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-1-x6-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-a {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-b {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-c {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-d {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-e {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-e img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-e ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-e ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-f {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-f img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-f ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-f ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-g {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-g img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-g ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-g ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-h {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-h img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-h ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-h ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-2-x6-i {
+      display: flex; }
+      .main2 .promo .zonaMas-2-x6-i img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-2-x6-i ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-2-x6-i ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-a {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-a img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-a ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-a ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-b {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-b img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-b ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-b ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-c {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-c img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-c ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-c ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-d {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-d img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-d ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-d ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-e {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-e img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-e ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-e ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-f {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-f img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-f ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-f ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-g {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-g img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-g ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-g ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-h {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-h img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-h ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-h ul li button {
+          margin-top: 5px;
+          padding: 5px; }
+    .main2 .promo .zonaMas-3-x1-i {
+      display: flex; }
+      .main2 .promo .zonaMas-3-x1-i img {
+        width: 80px;
+        height: 80px; }
+      .main2 .promo .zonaMas-3-x1-i ul li {
+        list-style: none; }
+        .main2 .promo .zonaMas-3-x1-i ul li button {
+          margin-top: 5px;
+          padding: 5px; }
 
 .main3 {
   grid-area: main; }
@@ -379,7 +826,7 @@ header .navbar {
       @media screen and (max-width: 576px) {
         .main3 .qs .item3 {
           width: 500px;
-          height: 450; } }
+          height: 750; } }
       .main3 .qs .item3 .mapa {
         padding: 30px;
         width: 670px;
@@ -394,6 +841,15 @@ header .navbar {
             width: 510px; } }
         @media screen and (max-width: 576px) {
           .main3 .qs .item3 .mapa {
+            width: 470px; } }
+        @media screen and (max-width: 992px) {
+          .main3 .qs .item3 .mapa iframe {
+            width: 670px; } }
+        @media screen and (max-width: 768px) {
+          .main3 .qs .item3 .mapa iframe {
+            width: 510px; } }
+        @media screen and (max-width: 576px) {
+          .main3 .qs .item3 .mapa iframe {
             width: 470px; } }
         .main3 .qs .item3 .mapa .mapa_foto {
           width: 500px;
@@ -505,7 +961,7 @@ footer {
   width: 100%;
   height: auto;
   margin-top: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0px;
   border-top: #808080 solid 1px; }
   footer .footer-container {
     margin-top: 25px;
