@@ -1,6 +1,6 @@
 @import "mixins.scss";
 body{
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: #fdfdfd;
     height: 100%;
     width: 100%;
@@ -26,6 +26,8 @@ body{
 }
 .body2{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -50,6 +52,8 @@ body{
     }
 .body3{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -74,6 +78,8 @@ body{
 }
 .body4{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -82,7 +88,7 @@ body{
     "footer";
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     @include media-down(lg){
         width: 100%;
     }
@@ -98,6 +104,8 @@ body{
 }
 .body5{
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -106,7 +114,7 @@ body{
     "footer";
     background-image: url("../assets/media/fondo.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     @include media-down(lg){
         width: 100%;
     }

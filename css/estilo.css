@@ -1,5 +1,5 @@
 body {
-  margin-top: 70px;
+  margin-top: 60px;
   background-color: #fdfdfd;
   height: 100%;
   width: 100%;
@@ -22,6 +22,8 @@ body {
 
 .body2 {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
@@ -43,6 +45,8 @@ body {
 
 .body3 {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
@@ -64,12 +68,14 @@ body {
 
 .body4 {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   @media screen and (max-width: 1200px) {
     .body4 {
       width: 100%; } }
@@ -85,12 +91,14 @@ body {
 
 .body5 {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
   background-image: url("../assets/media/fondo.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   @media screen and (max-width: 1200px) {
     .body5 {
       width: 100%; } }
@@ -297,7 +305,8 @@ header .navbar {
   grid-area: main; }
   .main2 .promo {
     margin-bottom: 5rem;
-    font-family: "nunito", sans-serif; }
+    font-family: "nunito", sans-serif;
+    font-weight: bold; }
     .main2 .promo .subtitulo-promos {
       font-family: "nunito", sans-serif;
       background-color: #B7E4C7;
@@ -540,259 +549,250 @@ header .navbar {
         .main2 .promo .zonaFem-3-x1-m ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-1-x6-a {
+  .main2 .promo-2 {
+    font-family: "nunito", sans-serif;
+    font-weight: bold; }
+    .main2 .promo-2 .zonaMas-1-x6-a {
       display: flex; }
-      .main2 .promo .zonaMas-1-x6-a img {
+      .main2 .promo-2 .zonaMas-1-x6-a img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-1-x6-a ul li {
+      .main2 .promo-2 .zonaMas-1-x6-a ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-1-x6-a ul li button {
+        .main2 .promo-2 .zonaMas-1-x6-a ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-1-x6-b {
+    .main2 .promo-2 .zonaMas-1-x6-b {
       display: flex; }
-      .main2 .promo .zonaMas-1-x6-b img {
+      .main2 .promo-2 .zonaMas-1-x6-b img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-1-x6-b ul li {
+      .main2 .promo-2 .zonaMas-1-x6-b ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-1-x6-b ul li button {
+        .main2 .promo-2 .zonaMas-1-x6-b ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-1-x6-c {
+    .main2 .promo-2 .zonaMas-1-x6-c {
       display: flex; }
-      .main2 .promo .zonaMas-1-x6-c img {
+      .main2 .promo-2 .zonaMas-1-x6-c img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-1-x6-c ul li {
+      .main2 .promo-2 .zonaMas-1-x6-c ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-1-x6-c ul li button {
+        .main2 .promo-2 .zonaMas-1-x6-c ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-1-x6-d {
+    .main2 .promo-2 .zonaMas-1-x6-d {
       display: flex; }
-      .main2 .promo .zonaMas-1-x6-d img {
+      .main2 .promo-2 .zonaMas-1-x6-d img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-1-x6-d ul li {
+      .main2 .promo-2 .zonaMas-1-x6-d ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-1-x6-d ul li button {
+        .main2 .promo-2 .zonaMas-1-x6-d ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-a {
+    .main2 .promo-2 .zonaMas-2-x6-a {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-a img {
+      .main2 .promo-2 .zonaMas-2-x6-a img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-a ul li {
+      .main2 .promo-2 .zonaMas-2-x6-a ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-a ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-a ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-b {
+    .main2 .promo-2 .zonaMas-2-x6-b {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-b img {
+      .main2 .promo-2 .zonaMas-2-x6-b img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-b ul li {
+      .main2 .promo-2 .zonaMas-2-x6-b ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-b ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-b ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-c {
+    .main2 .promo-2 .zonaMas-2-x6-c {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-c img {
+      .main2 .promo-2 .zonaMas-2-x6-c img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-c ul li {
+      .main2 .promo-2 .zonaMas-2-x6-c ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-c ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-c ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-d {
+    .main2 .promo-2 .zonaMas-2-x6-d {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-d img {
+      .main2 .promo-2 .zonaMas-2-x6-d img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-d ul li {
+      .main2 .promo-2 .zonaMas-2-x6-d ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-d ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-d ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-e {
+    .main2 .promo-2 .zonaMas-2-x6-e {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-e img {
+      .main2 .promo-2 .zonaMas-2-x6-e img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-e ul li {
+      .main2 .promo-2 .zonaMas-2-x6-e ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-e ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-e ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-f {
+    .main2 .promo-2 .zonaMas-2-x6-f {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-f img {
+      .main2 .promo-2 .zonaMas-2-x6-f img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-f ul li {
+      .main2 .promo-2 .zonaMas-2-x6-f ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-f ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-f ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-g {
+    .main2 .promo-2 .zonaMas-2-x6-g {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-g img {
+      .main2 .promo-2 .zonaMas-2-x6-g img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-g ul li {
+      .main2 .promo-2 .zonaMas-2-x6-g ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-g ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-g ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-h {
+    .main2 .promo-2 .zonaMas-2-x6-h {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-h img {
+      .main2 .promo-2 .zonaMas-2-x6-h img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-h ul li {
+      .main2 .promo-2 .zonaMas-2-x6-h ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-h ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-h ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-2-x6-i {
+    .main2 .promo-2 .zonaMas-2-x6-i {
       display: flex; }
-      .main2 .promo .zonaMas-2-x6-i img {
+      .main2 .promo-2 .zonaMas-2-x6-i img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-2-x6-i ul li {
+      .main2 .promo-2 .zonaMas-2-x6-i ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-2-x6-i ul li button {
+        .main2 .promo-2 .zonaMas-2-x6-i ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-a {
+    .main2 .promo-2 .zonaMas-3-x1-a {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-a img {
+      .main2 .promo-2 .zonaMas-3-x1-a img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-a ul li {
+      .main2 .promo-2 .zonaMas-3-x1-a ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-a ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-a ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-b {
+    .main2 .promo-2 .zonaMas-3-x1-b {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-b img {
+      .main2 .promo-2 .zonaMas-3-x1-b img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-b ul li {
+      .main2 .promo-2 .zonaMas-3-x1-b ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-b ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-b ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-c {
+    .main2 .promo-2 .zonaMas-3-x1-c {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-c img {
+      .main2 .promo-2 .zonaMas-3-x1-c img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-c ul li {
+      .main2 .promo-2 .zonaMas-3-x1-c ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-c ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-c ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-d {
+    .main2 .promo-2 .zonaMas-3-x1-d {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-d img {
+      .main2 .promo-2 .zonaMas-3-x1-d img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-d ul li {
+      .main2 .promo-2 .zonaMas-3-x1-d ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-d ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-d ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-e {
+    .main2 .promo-2 .zonaMas-3-x1-e {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-e img {
+      .main2 .promo-2 .zonaMas-3-x1-e img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-e ul li {
+      .main2 .promo-2 .zonaMas-3-x1-e ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-e ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-e ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-f {
+    .main2 .promo-2 .zonaMas-3-x1-f {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-f img {
+      .main2 .promo-2 .zonaMas-3-x1-f img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-f ul li {
+      .main2 .promo-2 .zonaMas-3-x1-f ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-f ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-f ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-g {
+    .main2 .promo-2 .zonaMas-3-x1-g {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-g img {
+      .main2 .promo-2 .zonaMas-3-x1-g img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-g ul li {
+      .main2 .promo-2 .zonaMas-3-x1-g ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-g ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-g ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-h {
+    .main2 .promo-2 .zonaMas-3-x1-h {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-h img {
+      .main2 .promo-2 .zonaMas-3-x1-h img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-h ul li {
+      .main2 .promo-2 .zonaMas-3-x1-h ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-h ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-h ul li button {
           margin-top: 5px;
           padding: 5px; }
-    .main2 .promo .zonaMas-3-x1-i {
+    .main2 .promo-2 .zonaMas-3-x1-i {
       display: flex; }
-      .main2 .promo .zonaMas-3-x1-i img {
+      .main2 .promo-2 .zonaMas-3-x1-i img {
         width: 80px;
         height: 80px; }
-      .main2 .promo .zonaMas-3-x1-i ul li {
+      .main2 .promo-2 .zonaMas-3-x1-i ul li {
         list-style: none; }
-        .main2 .promo .zonaMas-3-x1-i ul li button {
+        .main2 .promo-2 .zonaMas-3-x1-i ul li button {
           margin-top: 5px;
           padding: 5px; }
 
 .main3 {
   grid-area: main; }
-  .main3 .sb {
-    margin-top: 3rem;
-    margin-left: auto;
-    width: 350px;
-    padding: 10px;
-    background-color: #B7E4C7;
-    border-radius: 5px;
-    border: white solid 0.2px; }
-    .main3 .sb h2 {
-      font-family: "nunito", sans-serif;
-      color: #333;
-      text-align: center;
-      font-weight: bold; }
   .main3 .qs {
     text-align: center;
     justify-content: center;
     justify-items: center;
     margin-top: 5rem;
     margin-bottom: 5rem; }
-    .main3 .qs h2 h2 {
-      font-family: "Roboto Slab", serif;
+    .main3 .qs h2 {
+      font-family: "nunito", sans-serif;
       font-weight: bold;
-      color: #333; }
-    .main3 .qs h3 {
-      margin-top: 1.5rem; }
+      color: #333;
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto; }
     .main3 .qs p {
       color: #333;
       margin-top: 0,5rem;
       text-align: left;
-      font-family: "Roboto Slab", serif;
+      font-family: "nunito", sans-serif;
       padding: 20px;
       width: 700px; }
       @media screen and (max-width: 992px) {
@@ -857,14 +857,14 @@ header .navbar {
           margin: 0px; }
 
 .main4 {
-  grid-area: main; }
+  grid-area: main;
+  margin-bottom: 1.5rem; }
   .main4 .principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 75vh; }
+    text-align: center; }
     .main4 .principal h2 {
       color: #333;
       font-weight: bold; }
@@ -876,10 +876,8 @@ header .navbar {
       margin-top: 5rem;
       margin-right: auto;
       margin-left: auto;
-      width: 500px;
-      height: 250px;
-      border: #808080 solid 0.5px;
-      box-shadow: 10px 10px 5px 0px #e3e3e3;
+      width: 550px;
+      height: 550px;
       border-radius: 5px; }
       @media screen and (max-width: 576px) {
         .main4 .principal .cts-container {
@@ -890,14 +888,15 @@ header .navbar {
         width: 220px;
         margin-left: auto;
         margin-right: auto; }
-        .main4 .principal .cts-container .cts h2 {
-          padding: 5px 10px;
-          background-color: #baddc5;
-          border-radius: 5px;
-          border: #808080 solid 0.5px; }
         .main4 .principal .cts-container .cts p {
           width: 360px;
           text-align: left; }
+      .main4 .principal .cts-container .formulario-contacto {
+        background-color: #d6ffe5;
+        border-radius: 5px;
+        border: 0.5px solid #808080;
+        margin-bottom: 1rem;
+        font-family: "nunito", sans-serif; }
       .main4 .principal .cts-container .redes-container-contacto {
         list-style-type: none;
         margin-bottom: 1rem;
@@ -909,19 +908,19 @@ header .navbar {
           .main4 .principal .cts-container .redes-container-contacto li a {
             text-decoration: none;
             padding: 5px 10px;
-            font-size: 2em;
+            font-size: 1.5em;
             border-radius: 5px;
             color: #a8a8a8;
             background-color: #424242;
             transition: 1s; }
           .main4 .principal .cts-container .redes-container-contacto li .whatsapp:hover {
-            background: #25D366;
+            color: #25D366;
             text-decoration: none; }
           .main4 .principal .cts-container .redes-container-contacto li .instagram:hover {
-            background: #C13584;
+            color: #C13584;
             text-decoration: none; }
           .main4 .principal .cts-container .redes-container-contacto li .facebook:hover {
-            background: #3b5998;
+            color: #3b5998;
             text-decoration: none; }
 
 .main5 {
@@ -932,10 +931,13 @@ header .navbar {
     align-items: center;
     margin-top: 6rem;
     margin-bottom: 1rem;
-    font-family: "Roboto Slab", serif;
+    font-family: "nunito", sans-serif;
     text-align: center; }
     .main5 .registro h2 {
-      margin-bottom: 2rem; }
+      font-family: "nunito", sans-serif;
+      margin-bottom: 2rem;
+      color: #333;
+      font-weight: bold; }
     .main5 .registro form {
       background-color: #d6ffe5;
       border: #808080 solid 0.5px;
@@ -960,6 +962,8 @@ footer {
   background-color: black;
   width: 100%;
   height: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 1rem;
   margin-bottom: 0px;
   border-top: #808080 solid 1px; }

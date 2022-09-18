@@ -220,6 +220,7 @@
     .promo{
         margin-bottom: 5rem;
         font-family: $letra;
+        font-weight: bold;
         .subtitulo-promos{
             font-family: $letra;
             background-color: #B7E4C7;
@@ -234,6 +235,11 @@
             padding: 5px
         }
         @import "zonaFem.scss";
+    }
+    .promo-2{
+        font-family: $letra;
+        font-weight: bold;
+
         @import "zonaMas.scss";
     }
 }
@@ -241,21 +247,6 @@
 
 .main3{
     grid-area: main;
-    .sb{
-        margin-top: 3rem;
-        margin-left:auto;
-        width: 350px;
-        padding: 10px;
-        background-color: #B7E4C7;
-        border-radius: 5px;
-        border: rgb(255, 255, 255) solid 0.2px;
-        h2{
-            font-family: $letra;
-            color: $color-letra;
-            text-align: center;
-            font-weight: bold;
-        }
-    }
     .qs{
         text-align: center;
         justify-content: center;
@@ -263,20 +254,18 @@
         margin-top: 5rem;
         margin-bottom: 5rem;
         h2{
-            h2{
-                font-family: $letra2;
-                font-weight: bold;
-                color: $color-letra;
-            }
-        }
-        h3{
+            font-family: $letra;
+            font-weight: bold;
+            color: $color-letra;
             margin-top: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
         }
         p{  
             color: $color-letra;
             margin-top: 0,5rem;
             text-align: left;
-            font-family: $letra2;
+            font-family: $letra;
             padding:20px;
             width: 700px;
             @include media-down(md){
@@ -357,13 +346,13 @@
 
 .main4{
     grid-area: main;
+    margin-bottom: 1.5rem;
     .principal{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 75vh;
         h2{
             color: $color-letra;
             font-weight: bold;
@@ -377,10 +366,8 @@
             margin-top: 5rem;
             margin-right: auto;
             margin-left: auto;
-            width: 500px;
-            height: 250px;
-            border: $color-border solid 0.5px;
-            box-shadow: 10px 10px 5px 0px rgba(227,227,227,1);
+            width: 550px;
+            height: 550px;
             border-radius: 5px;
             @include media-down(xs){
                 width: 390px;
@@ -392,15 +379,19 @@
                 margin-left: auto;
                 margin-right: auto; 
                 h2{
-                    padding: 5px 10px;
-                    background-color: #baddc5;
-                    border-radius: 5px;
-                    border: $color-border solid 0.5px; 
+                    
                 }
                 p{
                     width: 360px;
                     text-align: left;
                 }    
+            }
+            .formulario-contacto{
+                background-color: $color-footer;
+                border-radius: 5px;
+                border: 0.5px solid $color-border;
+                margin-bottom: 1rem;
+                font-family: $letra;
             }
             .redes-container-contacto{
                 list-style-type: none;
@@ -413,7 +404,7 @@
                     a{
                         text-decoration: none;
                         padding: 5px 10px;
-                        font-size: 2em;
+                        font-size: 1.5em;
                         border-radius: 5px;
                         color: rgb(168, 168, 168);
                         background-color: #424242;
@@ -421,15 +412,15 @@
                         transition: 1s;
                     }
                     .whatsapp:hover{
-                        background: #25D366;
+                        color: #25D366;
                         text-decoration: none;
                     }
                     .instagram:hover{
-                        background: #C13584;
+                        color: #C13584;
                         text-decoration: none;
                     }
                     .facebook:hover{
-                        background: #3b5998;
+                        color: #3b5998;
                         text-decoration: none;
                     }
                 }
@@ -446,10 +437,13 @@
         align-items: center;
         margin-top: 6rem;
         margin-bottom: 1rem;
-        font-family: $letra2;
+        font-family: $letra;
         text-align: center;
         h2{
+            font-family: $letra;
             margin-bottom: 2rem;
+            color: $color-letra;
+            font-weight: bold;
         }
         form{
             background-color: #d6ffe5;
