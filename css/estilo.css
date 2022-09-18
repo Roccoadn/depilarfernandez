@@ -1,8 +1,6 @@
 body {
   margin-top: 60px;
   background-color: #fdfdfd;
-  height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -22,8 +20,6 @@ body {
 
 .body2 {
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
@@ -311,16 +307,13 @@ header .navbar {
     font-weight: bold; }
     .main2 .promo .subtitulo-promos {
       font-family: "nunito", sans-serif;
-      background-color: #B7E4C7;
-      border: #808080 solid 0.5px;
+      font-weight: bold;
       border-radius: 5px;
-      width: 200px;
       text-align: center;
       margin-top: 3rem;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 3rem;
-      padding: 5px; }
+      margin-bottom: 1rem; }
     .main2 .promo .zonaFem-1-x6-a {
       display: flex; }
       .main2 .promo .zonaFem-1-x6-a img {
@@ -979,38 +972,49 @@ footer {
     footer .footer-container h5 {
       color: white;
       font-family: "nunito", sans-serif; }
-    footer .footer-container .logo-container {
+    footer .footer-container .footer-container-1 {
       display: flex;
-      flex-direction: row;
-      align-items: flex-end; }
-      footer .footer-container .logo-container a {
-        text-decoration: none; }
-      footer .footer-container .logo-container h1 {
-        margin-left: 5px;
-        font-size: large;
-        color: white;
-        font-family: "Style Script", cursive; }
-      footer .footer-container .logo-container .logo-footer {
-        background-color: white;
-        border-radius: 50%; }
-    footer .footer-container .contacto-container {
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column; }
-      footer .footer-container .contacto-container h5 {
-        font-family: "nunito", sans-serif;
-        margin-top: 15px;
-        margin-bottom: 15px; }
-      footer .footer-container .contacto-container .boton-container button {
-        background-color: whitesmoke;
-        border-radius: 5px;
-        border: solid #808080 0.5px; }
-      footer .footer-container .contacto-container .boton-container:hover {
-        background-color: #c7c7c7; }
-      footer .footer-container .contacto-container a {
-        text-decoration: none;
-        color: #333;
-        font-family: "nunito", sans-serif; }
+      flex-direction: column;
+      margin-right: 10px; }
+      footer .footer-container .footer-container-1 .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end; }
+        footer .footer-container .footer-container-1 .logo-container a {
+          text-decoration: none; }
+        footer .footer-container .footer-container-1 .logo-container h1 {
+          margin-left: 5px;
+          font-size: large;
+          color: white;
+          font-family: "Style Script", cursive; }
+        footer .footer-container .footer-container-1 .logo-container .logo-footer {
+          background-color: white;
+          border-radius: 50%; }
+      footer .footer-container .footer-container-1 .contacto-container {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column; }
+        footer .footer-container .footer-container-1 .contacto-container h5 {
+          font-family: "nunito", sans-serif;
+          margin-top: 15px;
+          margin-bottom: 15px; }
+        @media screen and (max-width: 576px) {
+          footer .footer-container .footer-container-1 .contacto-container .boton-contacto {
+            width: 200px; } }
+        footer .footer-container .footer-container-1 .contacto-container .boton-contacto button {
+          background-color: whitesmoke;
+          border-radius: 5px;
+          border: solid #808080 0.5px; }
+        footer .footer-container .footer-container-1 .contacto-container .boton-contacto:hover {
+          background-color: #c7c7c7; }
+        footer .footer-container .footer-container-1 .contacto-container a {
+          text-decoration: none;
+          color: #333;
+          font-family: "nunito", sans-serif; }
+    @media screen and (max-width: 576px) {
+      footer .footer-container .menu-container {
+        margin-left: 20px;
+        margin-right: 20px; } }
     footer .footer-container .menu-container ul {
       margin: 0;
       padding: 0; }

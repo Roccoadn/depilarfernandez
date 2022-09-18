@@ -22,50 +22,62 @@ footer{
             color: white;
             font-family: $letra;
         }
-        .logo-container{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            a{
-                text-decoration: none;
-            }
-            h1{
-                margin-left: 5px;
-                font-size: large;
-                color: white;
-                font-family: $logoLetra;
-            }
-            .logo-footer{
-                background-color: white;
-                border-radius: 50%;
-            }
-        }
-        .contacto-container{
-            margin-top: 25px;
+        .footer-container-1{
             display: flex;
             flex-direction: column;
-            h5{
-                font-family: $letra;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-            .boton-container{
-                button{
-                background-color: whitesmoke;
-                border-radius: 5px;
-                border: solid $color-border 0.5px;
+            margin-right: 10px;
+            .logo-container{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                a{
+                    text-decoration: none;
+                }
+                h1{
+                    margin-left: 5px;
+                    font-size: large;
+                    color: white;
+                    font-family: $logoLetra;
+                }
+                .logo-footer{
+                    background-color: white;
+                    border-radius: 50%;
                 }
             }
-            .boton-container:hover{
-                background-color: rgb(199, 199, 199);
-            } 
-            a{
-                text-decoration: none;
-                color: $color-letra;
-                font-family: $letra;
+            .contacto-container{
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                h5{
+                    font-family: $letra;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                .boton-contacto{
+                    @include media-down(xs){
+                        width: 200px;
+                    }
+                    button{
+                    background-color: whitesmoke;
+                    border-radius: 5px;
+                    border: solid $color-border 0.5px;
+                    }
+                }
+                .boton-contacto:hover{
+                    background-color: rgb(199, 199, 199);
+                } 
+                a{
+                    text-decoration: none;
+                    color: $color-letra;
+                    font-family: $letra;
+                }
             }
         }
         .menu-container{
+            @include media-down(xs){
+                margin-left: 20px;
+                margin-right: 20px;
+            }
             ul{
                 margin: 0;
                 padding: 0;

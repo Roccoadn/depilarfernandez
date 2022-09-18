@@ -225,16 +225,13 @@
         font-weight: bold;
         .subtitulo-promos{
             font-family: $letra;
-            background-color: #B7E4C7;
-            border: $color-border solid 0.5px;
+            font-weight: bold;
             border-radius: 5px;
-            width: 200px;
             text-align: center;
             margin-top: 3rem;
             margin-left: auto;     
             margin-right: auto;
-            margin-bottom: 3rem;
-            padding: 5px
+            margin-bottom: 1rem;
         }
         @import "zonaFem.scss";
     }
