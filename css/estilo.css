@@ -214,7 +214,7 @@ header .navbar {
   .main1 .medio-index {
     margin-top: 3rem;
     height: 350px;
-    background-color: #ddd; }
+    background-color: #d6ffe5; }
     @media screen and (max-width: 992px) {
       .main1 .medio-index {
         height: 600px;
@@ -231,7 +231,8 @@ header .navbar {
         font-size: large;
         color: #333;
         font-family: "nunito", sans-serif;
-        text-align: start; }
+        text-align: start;
+        font-weight: bold; }
     .main1 .medio-index .turnos {
       margin-top: 2rem;
       margin-left: 1.5rem;
@@ -246,7 +247,7 @@ header .navbar {
       background-color: white;
       border: #808080 solid 0.5px;
       border-radius: 5px;
-      box-shadow: 10px 10px 5px 0px #b3b1b1; }
+      box-shadow: 10px 10px 5px 0px #486152; }
       .main1 .medio-index .turnos .subtitulo {
         background-color: #baddc5;
         border: #808080 solid 0.5px;
@@ -271,7 +272,7 @@ header .navbar {
           margin-top: 10px;
           font-family: "nunito", sans-serif;
           font-size: small;
-          background-color: #B7E4C7;
+          background-color: #baddc5;
           cursor: pointer;
           border: #808080 solid 0.5px;
           padding: 1px 5px;
@@ -295,6 +296,7 @@ header .navbar {
     .main1 .pfc .tittle-pg {
       text-align: left; }
       .main1 .pfc .tittle-pg i {
+        color: #85d39d;
         margin-left: 5px;
         margin-right: 10px;
         font-size: 1em; }
