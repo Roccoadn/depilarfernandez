@@ -1,6 +1,8 @@
 body {
   margin-top: 60px;
   background-color: #fdfdfd;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -20,6 +22,8 @@ body {
 
 .body2 {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
@@ -132,31 +136,12 @@ header .navbar {
 
 .main1 {
   grid-area: main; }
-  .main1 .hero {
-    grid-area: hero;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-image: url("../assets/media/fondoVerde.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Style Script", cursive;
-    font-size: xx-large; }
-    @media screen and (max-width: 1200px) {
-      .main1 .hero {
-        width: 100%; } }
-    @media screen and (max-width: 992px) {
-      .main1 .hero {
-        width: 100%; } }
-    @media screen and (max-width: 768px) {
-      .main1 .hero {
-        width: 100%; } }
+  .main1 .hero img {
+    height: 600px;
+    width: 100%; }
+    @media screen and (max-width: 576px) {
+      .main1 .hero img {
+        height: 400px; } }
   .main1 .container-medio {
     margin-top: 3rem; }
     .main1 .container-medio .contenido-medio {

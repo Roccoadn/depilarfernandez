@@ -8,38 +8,14 @@
 .main1{
     grid-area: main;
     .hero{
-    grid-area: hero;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    width: 100%;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5));
-    background-image: url("../assets/media/fondoVerde.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: $logoLetra;
-    font-size:xx-large;
-
-    @include media-down(lg){
-        width: 100%;
+        img{
+            height: 600px;
+            width: 100%;
+            @include media-down(xs){
+                height: 400px;
+            }
+        }
     }
-
-    @include media-down(md){
-        width: 100%;
-    }
-
-    @include media-down(sm){
-        width: 100%;
-    }
-    }
-
     .container-medio{
         margin-top: 3rem;
         .contenido-medio{
@@ -377,9 +353,6 @@
                 width: 220px;
                 margin-left: auto;
                 margin-right: auto; 
-                h2{
-                    
-                }
                 p{
                     width: 360px;
                     text-align: left;
