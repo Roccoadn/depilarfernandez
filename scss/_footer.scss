@@ -114,23 +114,22 @@ footer{
                     margin-top: 15px;
                     margin-bottom: 15px;
                 }
-                .boton-contacto{
-                    button{
-                    width: 100px;
-                    background-color: gray;
-                    border-radius: 5px;
-                    border: solid $color-border 0.5px;
-                    }
-                }
-                .boton-contacto:hover{
-                    background-color: rgb(199, 199, 199);
-                } 
                 a{
+                    text-align: center;
                     color: white;
+                    padding: 5px;
+                    width: 250px;
+                    margin-top: 5px;
                     text-decoration: none;
                     color: $color-letra;
                     font-family: $letra;
+                    background-color: gainsboro;
+                    border-radius: 5px;
+                    border: solid #bbb9b9 0.5px;
                 }
+                a:hover{
+                    background-color: rgb(199, 199, 199);
+                }            
             }
         }        
     }

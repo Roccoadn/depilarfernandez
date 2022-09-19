@@ -1025,18 +1025,20 @@ footer {
         font-family: "nunito", sans-serif;
         margin-top: 15px;
         margin-bottom: 15px; }
-      footer .footer-container .footer-container-2 .contacto-container .boton-contacto button {
-        width: 100px;
-        background-color: gray;
-        border-radius: 5px;
-        border: solid #808080 0.5px; }
-      footer .footer-container .footer-container-2 .contacto-container .boton-contacto:hover {
-        background-color: #c7c7c7; }
       footer .footer-container .footer-container-2 .contacto-container a {
+        text-align: center;
         color: white;
+        padding: 5px;
+        width: 250px;
+        margin-top: 5px;
         text-decoration: none;
         color: #333;
-        font-family: "nunito", sans-serif; }
+        font-family: "nunito", sans-serif;
+        background-color: gainsboro;
+        border-radius: 5px;
+        border: solid #bbb9b9 0.5px; }
+      footer .footer-container .footer-container-2 .contacto-container a:hover {
+        background-color: #c7c7c7; }
   footer .copy {
     text-align: center;
     font-family: "Style Script", cursive;
